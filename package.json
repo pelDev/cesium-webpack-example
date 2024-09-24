@@ -11,8 +11,7 @@
   "keywords": [
     "cesium",
     "CesiumJS",
-    "webpack",
-    "example"
+    "webpack"
   ],
   "repository": {
     "type": "git",
@@ -20,14 +19,13 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "postinstall": "cd webpack-4 && npm install && cd ../webpack-5 && npm install",
+    "postinstall": "cd webpack-5 && npm install",
     "eslint": "eslint \"./**/*.js\" \"./**/*.html\" --cache --quiet",
     "prettier": "prettier --write --no-config \"**/*\"",
     "prettier-check": "prettier --check --no-config \"**/*\"",
-    "start-4": "cd webpack-4 && npm run start",
-    "build-4": "cd webpack-4 && npm run build",
-    "start-5": "cd webpack-5 && npm run start",
-    "build-5": "cd webpack-5 && npm run build"
+    "start": "cd webpack-5 && npm run start",
+    "build": "cd webpack-5 && npm run build",
+    "serve": "cd webpack-5 && npm run start:built"
   },
   "devDependencies": {
     "eslint": "^8.56.0",

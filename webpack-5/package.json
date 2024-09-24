@@ -25,7 +25,8 @@
     "start:built": "npx http-server -a localhost -p 8080 dist/"
   },
   "dependencies": {
-    "cesium": "^1.114.0"
+    "cesium": "^1.114.0",
+    "http-server": "^14.1.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^9.1.0",
